@@ -1,0 +1,92 @@
+<div ng-controller="ExampleController">
+  <carousel interval="myInterval">
+    <slide ng-repeat="slide in slides" active="slide.active">
+      <img ng-src="{{slide.image}}" style="margin:auto;">
+      <div class="carousel-caption {{slide.className}} col-xs-8 col-sm-8 col-md-4 col-lg-4">
+        <h2>{{slide.subTitle}}</h2>
+        <h4>My responsibility:</h4>
+        <ul>
+          <li ng-repeat="text in slide.text">{{text.content}}</li>
+        </ul>
+        <h4>You could visit it:</h4>
+        <p><a href="{{slide.outLink}}" target="_blank">{{slide.outLink}}</a></p>
+      </div>
+    </slide>
+  </carousel>
+</div>
+<div class="row">
+  <tabset>
+    <tab heading="About Me">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <img src="images/son.jpg" class="img-responsive my-son" />
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+          <h3>BIO</h3>
+          <p>I'm not child labor. It's my son, a little Geek:)</p>
+          <p>OK. Here is my personal information:</p>
+          <ul>
+            <li>Name: Yao Wending</li>
+            <li>Gender: Male</li>
+            <li>Birth: 1979-02</li>
+            <li>Mobile: <a href="tel:13590230727">13590230727</a></li>
+            <li>Email: <a href="mailto:yao_wind79@hotmail.com">yao_wind79@hotmail.com</a></li>
+          </ul>
+          <p>And I like:</p>
+          <ul>
+            <li>Photography (Special photographer for the company annual party :D)</li>
+            <li>Swimming</li>
+            <li>Travelling (Especially historical cities)</li>
+            <li>Seeing movie (Especially sci-fi and comedies)</li>
+            <li>Reading (Especially sci-fi, Jack London and Lu Xun)</li>
+          </ul>
+        </div>
+      </div>
+    </tab>
+    <tab heading="My Skills">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-controller="SkillRadarCtrl">
+          <h4>Front-end Skills</h4>
+          <canvas id="radar" class="chart chart-radar" data="data" labels="labels"></canvas>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-controller="ToolRadarCtrl">
+          <h4>Front-end Tools</h4>
+          <canvas id="radar" class="chart chart-radar" data="data" labels="labels"></canvas>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-controller="ProRadarCtrl">
+          <h4>Project Management Tools</h4>
+          <canvas id="radar" class="chart chart-radar" data="data" labels="labels"></canvas>
+        </div>
+      </div>            
+    </tab>
+    <tab heading="My Objective">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-controller="PostDoughnutCtrl">
+          <h4>POSITION</h4>
+          <canvas class="chart chart-doughnut chart-xs" data="data" labels="labels" legend="false"></canvas>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-controller="SectorDoughnutCtrl">
+          <h4>SECTOR</h4>
+          <canvas class="chart chart-doughnut chart-xs" data="data" labels="labels" legend="false"></canvas>
+        </div>
+      </div>      
+    </tab>
+    <tab heading="Education">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+          <a href="http://www.gxnu.edu.cn/" target="_blank"><img src="images/logo.jpg" class="img-responsive my-son" /></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-10 col-lg-10">
+          <table data-toggle="table" data-url="data.json" class="table table-hover">
+            <thead>
+              <tr><th></th><th>Major</th><th>School</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1997/09 - 2001/07</td><td>Physics</td><td><a href="http://www.gxnu.edu.cn/" target="_blank">Guangxi Normal University</a></td></tr>
+            </tbody>
+          </table>
+        </div> 
+      </div>           
+    </tab>
+  </tabset>    
+</div>

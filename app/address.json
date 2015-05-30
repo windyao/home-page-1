@@ -1,0 +1,118 @@
+[
+	{
+		"text":"Guang Dong",
+		"value": "gd",
+		"children": [
+			{
+				"text": "Shen Zhen",
+				"value": "sz",
+				"children": [
+					{
+						"text": "Luo Hu",
+						"value": "lh",
+						"children": []
+					},
+					{
+						"text": "Fu Tian",
+						"value": "ft",
+						"children": []
+					},
+					{
+						"text": "Nan Shan",
+						"value": "ns",
+						"children": []
+					},
+					{
+						"text": "Yan Tian",
+						"value": "yt",
+						"children": []
+					}
+				]
+			},
+			{
+				"text": "Guang Zhou",
+				"value": "gz",
+				"children": [
+					{
+						"text": "Tian He",
+						"value": "th",
+						"children": []
+					},
+					{
+						"text": "Yue Xiu",
+						"value": "yx",
+						"children": []
+					},
+					{
+						"text": "Bai Yun",
+						"value": "by",
+						"children": []
+					},
+					{
+						"text": "Hunag Pu",
+						"value": "hp",
+						"children": []
+					}
+				]
+			}
+		]
+	},
+	{
+		"text": "Bei Jing",
+		"value": "bj",
+		"children": [
+			{
+				"text": "Chao Yang",
+				"value": "cy",
+				"children": [
+					{
+						"text": "Chao Wai",
+						"value": "cw",
+						"children": []
+					},
+					{
+						"text": "Jin Song",
+						"value": "js",
+						"children": []
+					},
+					{
+						"text": "Jian Wai",
+						"value": "jw",
+						"children": []
+					},
+					{
+						"text": "San Li Tun",
+						"value": "slt",
+						"children": []
+					}
+				]
+			},
+			{
+				"text": "Hai Dian",
+				"value": "hd",
+				"children": [
+					{
+						"text": "Wan Shou Lu",
+						"value": "wsl",
+						"children": []
+					},
+					{
+						"text": "Yang Fang Dian",
+						"value": "yfd",
+						"children": []
+					},
+					{
+						"text": "Gan Jia Kou",
+						"value": "gjk",
+						"children": []
+					},
+					{
+						"text": "Ba Li Zhuang",
+						"value": "blz",
+						"children": []
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,19 @@
+<h3>Linked Select</h3>
+<div>
+  <label ng-class="{error: error.province}">
+    <select class="form-control" ng-model="province" ng-options="p.text for p in address" ng-change="selectProvince()">
+      <option value="">Please select your province</option>
+    </select>
+  </label>
+  <label ng-class="{error: error.city}">
+    <select class="form-control" ng-model="city" ng-options="c.text for c in province.children" ng-change="selectCity()">
+      <option value="">Please select your city</option>
+    </select>
+  </label>
+  <label ng-class="{error: error.district}">
+    <select class="form-control" ng-model="district" ng-options="d.text for d in city.children" ng-change="selectDistrict()">
+      <option value="">Please select your district</option>
+    </select>
+  </label>
+  <p>Please confirm your address: <strong>{{province.text?(province.text+' > '):''}}{{city.text?(city.text+' > '):''}}{{district.text}}</strong></p>
+</div>

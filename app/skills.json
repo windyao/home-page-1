@@ -1,0 +1,14 @@
+{
+	"skills": {
+		"labels": ["JavaScript", "CSS", "jQuery", "jQuery Mobil", "LESS", "HTML5", "Bootstrap", "AngularJS", "Handlebars"],
+		"values": [[90, 95, 90, 80, 80, 80, 80, 80, 80]]
+	},
+	"tool": {
+		"labels": ["Sublime Text", "WebStorm", "Photoshop"],
+		"values": [[90, 75, 95]]
+	},
+	"project": {
+		"labels": ["Git", "Grunt", "Bower", "Yeoman", "Jasmine", "Requirejs", "FIS"],
+		"values": [[80, 80, 75, 75, 80, 60, 50]]
+	}
+}
