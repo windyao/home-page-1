@@ -1,17 +1,17 @@
 <h3>Linked Select</h3>
 <div>
   <label ng-class="{error: error.province}">
-    <select class="form-control" ng-model="province" ng-options="p.text for p in address" ng-change="selectProvince()">
+    <select class="form-control" ng-model="province" ng-options="p.value as p.text for p in address" ng-change="selectProvince()">
       <option value="">Please select your province</option>
     </select>
   </label>
   <label ng-class="{error: error.city}">
-    <select class="form-control" ng-model="city" ng-options="c.text for c in province.children" ng-change="selectCity()">
+    <select class="form-control" ng-model="city" ng-options="c.value as c.text for c in getChild(address, province)" ng-change="selectCity()">
       <option value="">Please select your city</option>
     </select>
   </label>
   <label ng-class="{error: error.district}">
-    <select class="form-control" ng-model="district" ng-options="d.text for d in city.children" ng-change="selectDistrict()">
+    <select class="form-control" ng-model="district" ng-options="d.value as d.text for d in getChild(getChild(address, province), city)" ng-change="selectDistrict()">
       <option value="">Please select your district</option>
     </select>
   </label>

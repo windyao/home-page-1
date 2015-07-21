@@ -15,6 +15,10 @@ angular.module('WindYao')
 		$scope.address = data;
 	});
 
+	$scope.province = 'gd';
+	$scope.city = 'sz';
+	$scope.district = 'lh';
+
 	$scope.selectProvince = function() {
 		$scope.error.province = false;
 		$scope.error.city = false;
@@ -32,4 +36,13 @@ angular.module('WindYao')
 	$scope.selectDistrict = function() {
 		$scope.error.district = false;
 	};
+
+	$scope.getChild = function(obj, key) {
+		for (var o in obj) {
+			if (obj[o]['value'] == key) {
+				return obj[o]['children'];
+				break;
+			}
+		}
+	}
   }]);
