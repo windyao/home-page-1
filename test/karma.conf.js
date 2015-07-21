@@ -38,6 +38,7 @@ module.exports = function(config) {
       'bower_components/moment/moment.js',
       'bower_components/n3-line-chart/build/line-chart.min.js',
       'bower_components/angular-bindonce/bindonce.js',
+      'bower_components/requirejs/require.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",
